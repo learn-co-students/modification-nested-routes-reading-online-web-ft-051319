@@ -17,7 +17,7 @@ class Post < ActiveRecord::Base
     where(author: author_id)
   end
 
-  private
+  private 
 
   def is_title_case
     if title.split.any?{|w|w[0].upcase != w[0]}
